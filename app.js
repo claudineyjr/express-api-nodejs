@@ -29,7 +29,6 @@ app.get('/participante/:id', (req, res) => {
 
 app.post('/participante', (req, res) => {
     const body = req.body || {};
-    console.log(req.body);
     if(!body.name) {
         res.status(412);
         res.send('Nome não encontrado');
